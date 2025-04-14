@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    {{ profile.username }}
+{% endblock %}
+
+{% block content %}
+
+    <section>
+        <img 
+            class="profile_picture" 
+            src="{{ profile.profile_image.url }}" 
+            alt="{{ profile.username}}"
+        />
+        <h1>Yebo</h1>
+        <h1>{{ profile.username }}</h1>
+             <p>{{ profile.firstname }} {{ profile.lastname }}</p>
+             <p>{{ profile.lastname }}</p>
+             <p>{{ profile.bio }}</p>
+             <p>{{ profile.social_linkedin }}</p>
+
+    </section>  
+{% endblock %}
+
+
+

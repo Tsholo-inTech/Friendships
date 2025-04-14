@@ -1,0 +1,64 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block content %}
+<style>
+    body {
+        background-image: url("{% static 'images/spu.jpg' %}");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+</style>
+
+<section>
+    <p>   </p>
+    <p>   </p>
+    <p>   </p>
+    <p>   </p>
+</section>
+
+<section>
+<h1 class="gradient"><strong>Your Campus, Your People</strong>
+    <br><b>Make Campus Feel Like Home – Meet Friends, Not Just Classmates</b></br>
+</h1>
+<p class="slogan"><i>A smart social assistant helping students connect based on comfort, interests, and location</i></p>
+
+</section>
+
+<div class="about">
+<h5>"Welcome to Hola!Amigo — your friendly companion on campus. 
+    Whether you're new to university life or just looking to expand your social circle, Hola!Amigo makes it easy and comfortable to connect with like-minded students. 
+    Discover events, make friends, and enjoy meaningful conversations — all in one supportive space designed just for you"</h5>
+
+<div>
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <ol>
+              <li>Create your profile 📲</li>
+              <li>Choose your comfort level (First Chat, Ready to Meet, or Just Observing) 🚦</li>
+              <li>Get smart suggestions and event invites 📆</li>
+              <li>Connect and grow your campus network 📈</li>
+            </ol>
+          </section>
+
+</div>
+
+<section class="safety">
+    <h2>Your Privacy Matters</h2>
+    <p>All profiles are verified through student email verification. You’re always in control of your visibility, can report or block users, and choose how you want to interact — whether that’s messaging or meeting in person.</p>
+  </section>
+
+<div>
+    <button class="cta-buttons"><a href="/users/register/">Get Started</button>
+</div>
+
+
+<p>Discover some of our <a href="/explore">exceptional</a> clubs, friends, and societies.</p>
+
+{% endblock %}

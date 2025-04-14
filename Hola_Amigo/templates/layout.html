@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        
+        {% block title %}
+            Django App
+        {% endblock %}    
+
+    </title>
+
+    <link rel = "stylesheet" href = "{% static 'css/style.css' %}">
+    <script src = "{% static 'js/main.js' %}" defer></script>
+
+</head>
+<body>
+    <nav>
+    <ul class="nav-list">
+        <div class="logo">
+            <img src="{% static '/images/logs.png' %}" style="height: 60px;" alt="Logo">
+        </div> 
+        <li><a href="/">
+            <span role="img" aria-label="Home" title="Home">🏠</span>
+            <p>Home |</p>
+        </a></li>
+
+        <li><a href="/explore">
+            <span role="img" aria-label="Explore" title="Explore">😀</span>
+            <p>Explore |</p>
+        </a></li>
+    
+        <li><a href="/accounts">
+            <span role="img" aria-label="Accounts" title="Accounts">📚</span>
+            <p>Accounts |</p>
+        </a></li> 
+
+        <li><a href="/users/register/">
+            <span role="img" aria-label="Register" title="Register">📥</span>
+            <p>Register |</p>
+        </a></li> 
+
+        <li><a href="/users/login/">
+            <span role="img" aria-label="Login" title="Login">🔏</span>
+            <p>Login |</p>
+        </a></li> 
+    </ul>
+       
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    
+
+</body>
+<footer>
+    <div class="column">
+        <p class="p-footer">Company</p>
+        <ul class="ul-footer">
+            <li class="li-footer">About Us</li>
+            <li class="li-footer">Careers</li>
+            <li class="li-footer">Privacy Policy</li>
+            <li class="li-footer">Contact Us</li>
+        </ul>
+        <p>&copy; 2025 Hola!Amigo. All rights reserved.</p>
+    </div>
+
+    <div class="column">
+        <p class="p-footer">App Features</p>
+        <ul class="ul-footer">
+            <li class="li-footer">Live Sessions</li>
+            <li class="li-footer">Group Calling</li>
+            <li class="li-footer">Channels</li>
+            <li class="li-footer">Event Updates</li>
+            <li class="li-footer">GPS Sharing</li>
+        </ul>
+    </div>
+
+    <div class="column">
+        <p class="p-footer">Focus</p>
+        <ul class="ul-footer">
+            <li class="li-footer">Academics</li>
+            <li class="li-footer">Sports</li>
+            <li class="li-footer">Clubs & Societies</li>
+            <li class="li-footer">SPU Leadership</li>
+        </ul>
+    </div>
+</footer>
+</html>

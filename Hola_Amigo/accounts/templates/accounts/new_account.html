@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    New Account
+{% endblock %}
+
+{% block content %}
+
+    <section>
+        <h1>New Account</h1>
+        <form class="form-with-validation" action="{% url 'accounts:new_account' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %} 
+            {{ form }}
+            <button class="form-submit">Create Account</button>
+        </form>
+
+    </section>  
+{% endblock %}
+
+
+

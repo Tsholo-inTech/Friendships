@@ -1,0 +1,133 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+    Explore Us
+{% endblock %}
+
+{% block content %}
+
+<div>
+    <input type="text" name="search" id="search">
+    <button class="searchbtn">Search</button>
+</div>
+
+<h1 class="gradient">
+    Meet and Greet Our Amigo Adventures!
+</h1>
+
+<section class="section_portfolio" id="features">
+    <h2>Core Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3 class="gradient">Buddy Matching</h3>
+        <p>Get friend suggestions based on shared interests, classes, study locations, and shared background.</p>
+        <img src="{% static '/images/trio friends.webp' %}" alt="Our Events">
+      </div>
+      <div class="feature">
+        <h3 class="gradient">Anonymous Chat</h3>
+        <p>Break the ice before meeting in person with private, anonymous chats.</p>
+        <img src="{% static '/images/anony.webp' %}" alt="Our Events">
+      </div>
+      <div class="feature">
+        <h3 class="gradient">Event Reminder</h3>
+        <p>Discover campus, clubs and society events, tutorials and study sessions tailored to your profile.</p>
+        <img src="{% static '/images/reminder.webp' %}" alt="Our Events">
+      </div>
+      <div class="feature">
+        <h3 class="gradient">Socializing Rewards</h3>
+        <p>Earn badges and streaks as you grow your network.</p>
+        <img src="{% static '/images/streak.jpeg' %}" alt="Our Events">
+      </div>
+    </div>
+  </section>
+
+  <section class="section_portfolio" id="features">
+    <h2>Making Academics a Fashion Show</h2>
+    <div class="features">
+      <div class="feature">
+        <h3 class="gradient">Sports, Arts & Culture</h3>
+        <p>Want to know about the Gemmie Spirit?</p>
+        <p> We have a variety of sporting codes that you can join or support.Sport is important for student life at SPU. 
+          The aim is to ensure students can participate in sport at various levels from recreational to competitive</p>
+        <img src="{% static '/images/gemboks.jpg' %}" alt="Our Events">
+        <div>
+          <button>Read More</button>
+      </div>
+      </div>
+      <div class="feature">
+        <h3 class="gradient">Study Group Sessions</h3>
+        <p> The Sol Plaatje University Library Building has friendly and professional staff skilled in digital literacy, research support and innovation, 
+          our Faculty Study Areas and Library is positioned to support of academic excellence
+        </p>
+        <img src="{% static '/images/study.jpeg' %}" alt="Our Events">
+        
+          <button>Read More</button>
+      </div>
+
+      <div class="feature">
+        <h3 class="gradient">Student Representative Council</h3>
+        <p>Want to Advocate Your Leadership Skills?</p>
+        <p>The Student Representative Council (SRC) in a university serves as the official voice of the student body, 
+          advocating for their rights and interests. 
+          It organizes events, addresses student concerns, and works with university administration to improve campus life.</p>
+        <img src="{% static '/images/academic.jpeg' %}" alt="Our Events">
+        <div>
+          <button>Read More</button>
+      </div>
+      </div>
+
+      <div class="feature">
+        <h3 class="gradient">Student Health & Wellness</h3>
+        <p>Helping Students as a Health Warrior</P>
+        <p>Student Health and Wellness offices at universities generally advocate for a holistic approach to student well-being — 
+          not just physical health, but mental, emotional, and even social and academic balance.</p>
+        <img src="{% static '/images/wellness.jpeg' %}" alt="Our Events">
+        <div>
+          <button>Read More</button>
+      </div>
+      </div>
+
+      <div class="feature">
+        <h3 class="gradient">Leadership Awards</h3>
+        <p>SPU hosts the prestigious Vice-Chancellor’s Excellence Awards to honour the exceptional achievements of students and staff in various fields: academics, sports, leadership, campus life, faculties, etc.</p>
+        <img src="{% static '/images/awards.jpeg' %}" alt="Our Events">
+        <button>Read More</button>
+      </div>
+
+      <div class="feature">
+        <h3 class="gradient">Heritage Week Celebrations</h3>
+        <p>SPU is committed to reflecting this significance through our academic focus on Heritage Studies. As a university located in the Northern Cape – a province renowned for its deep historical roots 
+          and cultural significance – heritage is at the core of who we are</p>
+        <img src="{% static '/images/heritage.jpeg' %}" alt="Our Events">
+        <button>Read More</button>
+      </div>
+
+      <div class="feature">
+        <h3 class="gradient">Community Events</h3>
+        <p>Join the #MySPU Community</p>
+        <p>We encourage schools, businesses, community groups, and corporates to come out and join
+          Vice-Chancellor’s Cycle Challenges and events in the Northern Cape.
+        </P>
+        <img src="{% static '/images/community.jpg' %}" alt="Our Events">
+        <button>Read More</button>
+      </div>
+
+      <div class="feature">
+        <h3 class="gradient">Graduation Ceremony</h3>
+        <p>Honouring achievements and a decade of excellence</p>
+        <p>SPU is proud to have celebrated its first cohort of Master’s students. 
+          This milestone demonstrates the university’s commitment to pushing the boundaries of knowledge and 
+          fostering an environment of inquiry and critical thought</p>
+        <img src="{% static '/images/grad.webp' %}" alt="Our Events">
+        <button>Read More</button>
+      </div>
+    </div>
+  </section>
+
+  
+<p>Check out our exceptional <a href="/">Portfolio</a> profiles</p>
+{% endblock %}
+
+{% load static %}
+

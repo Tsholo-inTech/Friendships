@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Accounts
+{% endblock %}
+
+{% block content %}
+
+    <section>
+        <h1>This is the Accounts List Page </h1>
+
+        {% for profile in accounts %}
+
+            <article class="profile">
+
+                <h2>
+                    <a href="/accounts/profilepage/"> 
+                        {{ profile.username }}
+                    </a>
+                </h2>
+                
+                 <p>{{ profile.bio }} <br>created on {{ profile.created }}</br></p>
+                 <p>LinkedIn : {{ profile.social_linkedin }}</p>
+                 
+                 
+            </article>
+
+        {% endfor %}
+    </section>  
+{% endblock %}
+
+
+
+
